@@ -1,0 +1,27 @@
+/* Green Color Palette */
+:root {
+  --green-50: #F0FFF4;
+  --green-100: #C6F6D5;
+  --green-200: #9AE6B4;
+  --green-300: #68D391;
+  --green-400: #48BB78;
+  --green-500: #38A169;
+  --green-600: #2F855A;
+  --green-700: #276749;
+  --green-800: #22543D;
+  --green-900: #1C4532;
+}
+
+/* Gold Color Palette */
+:root {
+  --gold-50: #FFFBEB;
+  --gold-100: #FEF3C7;
+  --gold-200: #FDE68A;
+  --gold-300: #FCD34D;
+  --gold-400: #FBBF24;
+  --gold-500: #F59E0B;
+  --gold-600: #D97706;
+  --gold-700: #B45309;
+  --gold-800: #92400E;
+  --gold-900: #78350F;
+}

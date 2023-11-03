@@ -1,0 +1,59 @@
+{
+  "sightings": [
+    {
+      "id": "8b5c8ca9-7664-42b7-853f-c2c78e01846e",
+      "username": "BirdWatcher56",
+      "location": {
+        "latitude": -14.235,
+        "longitude": -51.9253
+      },
+      "timestamp": "2023-10-03T08:20:00.000Z",
+      "title": "Toucan Paradise",
+      "description": "Visited an area filled with toucans of various species. Their vibrant beaks and playful behavior were a delight to observe."
+    },
+    {
+      "id": "7bec2ecd-690e-4887-b586-937d9851b058",
+      "username": "JungleTracker39",
+      "location": {
+        "latitude": -3.4653,
+        "longitude": 29.8295
+      },
+      "timestamp": "2023-10-02T12:05:00.000Z",
+      "title": "Jaguar Sighting",
+      "description": "Had a rare sighting of a jaguar roaming in its natural habitat. Stayed still to admire this magnificent creature from afar."
+    },
+    {
+      "id": "dcbffa17-47af-46de-b73d-2ac779cc1df4",
+      "username": "NatureExplorer123",
+      "location": {
+        "latitude": 51.1901512,
+        "longitude": 4.4249487
+      },
+      "timestamp": "2023-10-11T10:30:00.000Z",
+      "title": "Majestic Tiger Sighting",
+      "description": "Spotted a beautiful tiger near the riverbank during my jungle expedition. It was a breathtaking sight!"
+    },
+    {
+      "id": "1782398f-27e0-4e82-a8da-eb5b03111a2d",
+      "username": "NatureExplorer123",
+      "location": {
+        "latitude": 51.1901512,
+        "longitude": 4.4249487
+      },
+      "timestamp": "2023-10-29T13:50:07.332Z",
+      "title": "Majestic Tiger Sighting",
+      "description": "Spotted a beautiful tiger near the riverbank during my jungle expedition. It was a breathtaking sight!"
+    },
+    {
+      "id": "796fcb85-1168-4dbc-aa33-7e4b75ce8d91",
+      "username": "NatureExplorer123",
+      "location": {
+        "latitude": 51.1901512,
+        "longitude": 4.4249487
+      },
+      "timestamp": "2023-10-29T13:52:10.596Z",
+      "title": "Majestic Tiger Sighting",
+      "description": "Spotted a beautiful tiger near the riverbank during my jungle expedition. It was a breathtaking sight!"
+    }
+  ]
+}
