@@ -1,5 +1,9 @@
 # Intro
 
+# Setup
+- npm install
+- npm run dev
+
 # MVP
 
 - een hiker kan nieuwe logs aanmaken binnen een jungle gebied, bv:
@@ -51,3 +55,4 @@ Does the team deliver a clear, complete presentation of their application
 How well does the application perform in terms of speed and responsiveness?
 
 Does it handle data and resources efficiently?
+
