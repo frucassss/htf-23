@@ -1,58 +1,62 @@
-# Intro
+# Hack The Future 2023
 
-# Setup
-- npm install
-- npm run dev
+![Jungle Hike Logger](logo.png)
 
-# MVP
+De **Jungle Hike logger** is een applicatie waar hikers belangrijke waarnemingen kunnen loggen en 
+de logs van andere hikers binnen het gebied kunnen bekijken. Zo krijgen alle hikers in de buurt 
+steeds live updates van eventuele gevaren die dreigen of van de beste hotspots om te bezoeken. 
+Door een interactieve kaart vindt elke hiker de beste weg doorheen de jungle om zijn tocht verder te 
+zetten.
 
-- een hiker kan nieuwe logs aanmaken binnen een jungle gebied, bv:
-- een hiker kan de aanwezigheid van een gevaarlijk dier loggen om anderen te waarschuwen
-- een hiker kan een locatie loggen waar hij mooie natuur is tegengekomen, zoals watervallen, zeldzame dier of -planten soorten, …
-- een hiker kan aanduiden welk jungle gebied hij aan het bezoeken is om zo een overzicht te krijgen van alle gelogd events binnen dat gebied
-- een hiker heeft een profielpagina waar hij zijn eigen logs per jungle gebied kan bekijken
+## Starter Project
+Voor deze opdrachten werken jullie in Java en/of Javascript. De technologiekeuze is vrij, maar om jullie op weg te 
+zetten, bevat deze repository een starter project in [Svelte](https://svelte.dev/). Je start deze als volgt:
 
-# Uitbreidingen
+```
+npm install
+npm run dev
+```
 
-- een hiker kan de gelogd events die coördinaten bevatten bekijken op de kaart van het geselecteerde jungle gebied
-- een hiker kan hoveren over een pin op de map om zo snel meer info te verkrijgen over de log
-- een hiker krijgt live updates wanneer andere hikers binnen hetzelfde gebied nieuwe events loggen
-- een hiker kan een event taggen met enkele keywords die het event kort beschrijven, zodat andere hikers op het eerste zicht al een idee hebben waarover de log gaat (bv danger, rare species, …)
-- een hiker kan logs filteren obv hun tags
-- een hiker krijgt een push melding voor
-- een danger tag die gelogd wordt binnen zijn gebied
-- een hiker kan een foto uploaden bij zijn event
-- een hiker kan een account aanmaken
+## Challenge
+Om de verschillende teams op een gelijkaardige manier te kunnen beoordelen, verwachten we ongeveer deze functionaliteiten:
 
-# Beoordeling
+- Een hiker kan nieuwe logs aanmaken binnen een jungle gebied, bv:
+    - Een hiker kan de aanwezigheid van een gevaarlijk dier loggen om anderen te waarschuwen
+    - Een hiker kan een locatie loggen waar hij mooie natuur is tegengekomen, zoals watervallen, zeldzame dier of -planten soorten, …
+- Een hiker kan aanduiden welk gebied hij aan het bezoeken is om zo een overzicht te krijgen van alle gelogd events binnen dat gebied
+- Een hiker heeft een profielpagina waar hij zijn eigen logs per jungle gebied kan bekijken
 
-## Functionality (30%)
+## Uitbreidingen
+Hieronder vind je enkele uitbreidingen als suggestie of laat je eigen creativiteit de vrij loop gaan!
 
-Does the application work as intended without crashes or major bugs?
+- Een hiker kan de gelogde events die coördinaten bevatten bekijken op de kaart van het geselecteerde jungle gebied
+- Een hiker kan hoveren over een pin op de map om zo snel meer info te verkrijgen over de log
+- Een hiker krijgt live updates wanneer andere hikers binnen hetzelfde gebied nieuwe events loggen
+- Een hiker kan een event taggen met enkele keywords die het event kort beschrijven, zodat andere hikers op het eerste zicht al een idee hebben waarover de log gaat (bv danger, rare species, …)
+- Een hiker kan logs filteren obv hun tags
+- Een hiker krijgt een push meldingen (bv wanneer een danger tag gelogd wordt binnen zijn gebied)
+- Een hiker kan een foto uploaden bij zijn event
+- Een hiker kan een account aanmaken
 
-Are all features and functions smoothly accessible and responsive?
+## Beoordeling
+Op het einde van de hackathon, beoordeelt onze jury het eind resultaat. In deze beoordeling houden we de volgende zaken:
 
-Does it fulfill the stated purpose effectively?
+- Functionaliteit (30%)
+  - Werkt de applicatie zoals verwacht? (geen crashes of bugs)
+  - Werken alle functionaliteiten soepel zoals we dit van een echte applicatie zou verwachten?
+  - Hoe dicht zitten we bij een eerste MVP om dit effectief te gebruiken?
 
-## Creativiteit and innovation (40%)
+- Creativiteit & innovatie (40%)
+  - Introduceert de applicatie nieuwe, innovative of creatieve oplossingen?
+  - Hoe springt jullie applciatie er bovenuit tov de andere deelnemers
 
-Does the application introduce new, innovative, or creative solutions?
+- User experience (25%)
+  - Is de user interface intuitief en gebruiksvriendelijk?
+  - Ziet de applicatie er visueel aantrekkelijk uit?
+  - Is de functionaliteit duidelijk voor nieuwe gebruikers?
+  - Heeft het team een duidelijke en complete presentatie gegeven van hun applicatie?
 
-Does it stand out from other applications?
-
-## User experience (25%)
-
-Is the user interface intuitive and user-friendly?
-
-Is the application visually appealing?
-
-Are the intended features clear to the user?
-
-Does the team deliver a clear, complete presentation of their application
-
-## Performance (5%)
-
-How well does the application perform in terms of speed and responsiveness?
-
-Does it handle data and resources efficiently?
+- Performance (5%)
+  - Is de applicatie performant en bruikbaar?
+  - Maakt de applicatie effectient gebruik van de data en andere resources
 
