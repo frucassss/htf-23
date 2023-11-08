@@ -3,7 +3,7 @@
 ![Jungle Hike Logger](logo.png)
 
 De **Jungle Hike logger** is een applicatie waar hikers belangrijke waarnemingen kunnen loggen en 
-de logs van andere hikers binnen het gebied kunnen bekijken. Zo krijgen alle hikers in de buurt 
+de 'sightings' van andere hikers binnen het gebied kunnen bekijken. Zo krijgen alle hikers in de buurt 
 steeds live updates van eventuele gevaren die dreigen of van de beste hotspots om te bezoeken. 
 Door een interactieve kaart vindt elke hiker de beste weg doorheen de jungle om zijn tocht verder te 
 zetten.
@@ -20,11 +20,11 @@ npm run dev
 ## Challenge
 Om de verschillende teams op een gelijkaardige manier te kunnen beoordelen, verwachten we ongeveer deze functionaliteiten:
 
-- Een hiker kan nieuwe logs aanmaken binnen een jungle gebied, bv:
+- Een hiker kan nieuwe sightings aanmaken binnen een jungle gebied, bv:
     - Een hiker kan de aanwezigheid van een gevaarlijk dier loggen om anderen te waarschuwen
     - Een hiker kan een locatie loggen waar hij mooie natuur is tegengekomen, zoals watervallen, zeldzame dier of -planten soorten, …
 - Een hiker kan aanduiden welk gebied hij aan het bezoeken is om zo een overzicht te krijgen van alle gelogd events binnen dat gebied
-- Een hiker heeft een profielpagina waar hij zijn eigen logs per jungle gebied kan bekijken
+- Een hiker heeft een profielpagina waar hij zijn eigen sightings per jungle gebied kan bekijken
 
 ## Uitbreidingen
 Hieronder vind je enkele uitbreidingen als suggestie of laat je eigen creativiteit de vrij loop gaan!
@@ -33,7 +33,7 @@ Hieronder vind je enkele uitbreidingen als suggestie of laat je eigen creativite
 - Een hiker kan hoveren over een pin op de map om zo snel meer info te verkrijgen over de log
 - Een hiker krijgt live updates wanneer andere hikers binnen hetzelfde gebied nieuwe events loggen
 - Een hiker kan een event taggen met enkele keywords die het event kort beschrijven, zodat andere hikers op het eerste zicht al een idee hebben waarover de log gaat (bv danger, rare species, …)
-- Een hiker kan logs filteren obv hun tags
+- Een hiker kan sightings filteren obv hun tags
 - Een hiker krijgt een push meldingen (bv wanneer een danger tag gelogd wordt binnen zijn gebied)
 - Een hiker kan een foto uploaden bij zijn event
 - Een hiker kan een account aanmaken
