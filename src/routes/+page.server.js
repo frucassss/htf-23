@@ -1,5 +1,6 @@
 import { randomUUID } from 'crypto';
 import { db } from '../lib/db';
+import { Config } from '/src/Config';
 
 export const ssr = false;
 
@@ -13,14 +14,15 @@ export async function load() {
 export const actions = {
 	default: async ({ request }) => {
 		const formData = await request.formData();
+		console.log(formData.get('latitude'))
 		await db.push(
 			'/sightings[]',
 			{
 				id: randomUUID(),
-				username: "Monkey D Lufy",
+				username: Config.username,
 				location: {
-					latitude: 51.1901512,
-					longitude: 4.4249487
+					latitude: formData.get('latitude'),
+					longitude: formData.get('longitude')
 				},
 				danger: formData.get('danger'),
 				timestamp: new Date().toISOString(),

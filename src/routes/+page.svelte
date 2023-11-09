@@ -5,6 +5,7 @@
 	import { enhance } from '$app/forms';
 	import { invalidateAll } from '$app/navigation'
 	import Button from '../lib/components/Button.svelte';
+	import { Config } from '/src/Config';
 
 	export let data;
 	$: sightings = data.sightings.map((s) => ({
@@ -95,7 +96,9 @@ function updateSelectClass(value) {
 
 <div class="container">
 	<div class="map-container">
-		<Map markers={sightings.map((s) => ({ id: s.id, location: s.location }))} />
+		<Map markers={
+			sightings.map((s) => ({ id: s.id, location: s.location }))
+			} />
 	</div>
 	<div class="list-container">
 		<h1>Sightings</h1>
@@ -140,7 +143,7 @@ function updateSelectClass(value) {
 					}
 				}}>
 					<label for="username">Username</label>
-					<input name="username" id="username" type="text" value="Monkey D Lufy" required disabled/>
+					<input name="username" id="username" type="text" value="{Config.username}" required disabled/>
 				
 					<label for="title">Title</label>
 					<input name="title" id="title" type="text" required />
