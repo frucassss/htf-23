@@ -11,22 +11,25 @@ export async function load() {
 }
 
 export const actions = {
-	add: async ({ request }) => {
+	default: async ({ request }) => {
 		const formData = await request.formData();
 		await db.push(
 			'/sightings[]',
 			{
 				id: randomUUID(),
-				username: 'NatureExplorer123',
+				username: formData.get('username'),
 				location: {
 					latitude: 51.1901512,
 					longitude: 4.4249487
 				},
+				danger: formData.get('danger'),
 				timestamp: new Date().toISOString(),
 				title: formData.get('title'),
 				description: formData.get('description')
 			},
 			true
 		);
+		await db.save();
+		await db.reload();
 	}
 };
