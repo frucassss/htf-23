@@ -7,10 +7,9 @@
 
     let user = {
         name: Config.username,
-        email: 'bard@kiekebo.com',
-        profilePicture: '/src/lib/assets/jhl3.jpeg',
-        birthday: '01-01-2000',
-        sightings: []
+        email: Config.email,
+        profilePicture: Config.profilePicture,
+        birthday: Config.birthday,
     };
 
     export let sightings;
