@@ -3,7 +3,7 @@
     import { goto } from '$app/navigation';
     import Sighting from '/src/lib/components/Sighting.svelte';
     let user = {
-        name: 'bard',
+        name: 'NatureExplorer123',
         email: 'bard@kiekebo.com',
         profilePicture: '/src/lib/assets/jhl3.jpeg',
         birthday: '01-01-2000',
@@ -17,13 +17,12 @@
     let title = '';
 
     onMount(async () => {
-        filteredSightings = sightings;
         getSightings();
+        filteredSightings = sightings;
     });
 
     async function getSightings(){
-        console.log(sightings);
-        console.log(filteredSightings);
+        sightings = sightings.filter(sightings => sightings.username == user.name);
     }
 
     function filter() {
@@ -50,7 +49,7 @@
     <p>email: {user.email}</p>
     <p>birthday: {user.birthday}</p>
 
-    <h2>Sightings:</h2>
+    <h2>Your Sightings:</h2>
     <div class="filter">
         <form>
 
