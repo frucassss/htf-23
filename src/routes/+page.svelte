@@ -1,11 +1,19 @@
 <script>
 	const formatter = Intl.DateTimeFormat('nl-BE', { dateStyle: 'medium', timeStyle: 'short' });
 	import Map from '$lib/Map/Map.svelte';
+	import AddSightingPopup from '../lib/AddSightingPopup.svelte';
 	export let data;
 	$: sightings = data.sightings.map((s) => ({
 		...s,
 		timestamp: formatter.format(new Date(s.timestamp))
 	}));
+	// Popup visibility state
+	let isPopupOpen = false;
+
+	// Function to toggle popup visibility
+	function togglePopup() {
+		isPopupOpen = !isPopupOpen;
+	}
 </script>
 
 <div class="container">
@@ -14,6 +22,7 @@
 	</div>
 	<div class="list-container">
 		<h1>Sightings</h1>
+		<button on:click={togglePopup}>Add Sighting</button> <!-- Button to add sighting -->
 		{#each sightings as sighting}
 			<div class="list-item">
 				<span>{sighting.timestamp} by {sighting.username}</span>
@@ -22,7 +31,12 @@
 			</div>
 		{/each}
 	</div>
+	{#if isPopupOpen}
+  		<AddSightingPopup closePopup={togglePopup} />
+	{/if}
 </div>
+
+
 
 <style>
 	.container {
@@ -34,6 +48,7 @@
 	.map-container {
 		width: 70%;
 		height: 100%;
+		z-index: 0;
 	}
 
 	.list-container {
