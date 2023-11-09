@@ -1,7 +1,11 @@
 <script>
+      import { onMount } from 'svelte';
+
     export let closePopup;
 
     export let addSighting;
+
+    let defaultTimestamp = new Date().toISOString().slice(0, 16); // slice to fit the datetime-local input format
 
     let newSighting = {
     username: '',
@@ -11,8 +15,24 @@
         latitude: null,
         longitude: null
     },
-    timestamp: new Date().toISOString()
+    timestamp: defaultTimestamp
     };
+    function getLocation() {
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        newSighting.location.latitude = position.coords.latitude;
+        newSighting.location.longitude = position.coords.longitude;
+      }, (error) => {
+        console.error('Geolocation error:', error);
+      });
+        } else {
+        console.error('Geolocation is not supported by this browser.');
+        }
+    }
+
+    onMount(() => {
+        getLocation();
+    });
 
     function submitForm() {
     addSighting(newSighting);

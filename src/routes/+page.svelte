@@ -15,6 +15,11 @@
 	function togglePopup() {
 		isPopupOpen = !isPopupOpen;
 	}
+
+	function addSighting(sighting) {
+    // Logic to add the sighting to your state or send it to a server
+    console.log('Adding sighting:', sighting);
+  }
 </script>
 
 <div class="container">
@@ -33,7 +38,7 @@
 		{/each}
 	</div>
 	{#if isPopupOpen}
-  		<AddSightingPopup closePopup={togglePopup} />
+		<AddSightingPopup closePopup={togglePopup} addSighting={addSighting} />
 	{/if}
 </div>
 
