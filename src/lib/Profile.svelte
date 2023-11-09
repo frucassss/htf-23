@@ -2,8 +2,11 @@
     import {onMount} from 'svelte';
     import { goto } from '$app/navigation';
     import Sighting from '/src/lib/components/Sighting.svelte';
+    import {Config} from '/src/Config'
+    
+
     let user = {
-        name: 'NatureExplorer123',
+        name: Config.username,
         email: 'bard@kiekebo.com',
         profilePicture: '/src/lib/assets/jhl3.jpeg',
         birthday: '01-01-2000',
@@ -19,6 +22,7 @@
     onMount(async () => {
         getSightings();
         filteredSightings = sightings;
+        console.table(sightings);
     });
 
     async function getSightings(){
