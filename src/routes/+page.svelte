@@ -4,8 +4,7 @@
 	import { onMount } from 'svelte';
 	import { enhance } from '$app/forms';
 	import { invalidateAll } from '$app/navigation'
-	import dangerLogo from '$lib/assets/danger-alert.svg';
-
+	import Button from '../lib/components/Button.svelte';
 	export let data;
 	$: sightings = data.sightings.map((s) => ({
 		...s,
@@ -99,7 +98,7 @@ function updateSelectClass(value) {
 	</div>
 	<div class="list-container">
 		<h1>Sightings</h1>
-		<button on:click={togglePopup}>Add Sighting</button>
+		<Button on:click={togglePopup}>Add Sighting</Button> <!-- Button to add sighting -->
 		{#each sightings as sighting}
 			<div class="list-item danger-level-{sighting.danger}">
 				<span>{sighting.timestamp} by {sighting.username}</span>
