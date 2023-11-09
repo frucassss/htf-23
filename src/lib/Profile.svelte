@@ -31,7 +31,11 @@
             filteredSightings = sightings;
             return;
         }
-        filteredSightings = sightings.filter(sighting => sighting.title == title);
+        filteredSightings = sightings.filter(sighting => sighting.title.includes(title));
+    }
+
+    function clear(){
+        filteredSightings = sightings;
     }
 </script>
 
@@ -53,13 +57,15 @@
             <input type="text" id="title" name="title" bind:value={title}>
 
             <button type="submit" on:click={filter}>Apply</button>
+            <button type="submit" on:click={clear}>clear</button>
+
         </form>
     </div>
     {#each filteredSightings as sighting}
         <div class="list-item">
             <span>{sighting.timestamp} by {sighting.username}</span>
             <h2>{sighting.title}</h2>
-            <h3>{sighting.location}</h3>
+            <h3>{sighting.location.latitude} {sighting.location.longitude}</h3>
             <p>{sighting.description}</p>
         </div>
     {/each}
@@ -75,9 +81,10 @@
         gap: 0.5rem;
     }
     .profile-picture {
+        border: 1px solid black;
         width: 150px;
         height: 150px;
-        border-radius: 50%;
+        border-radius: 0.5rem;
     }
 
     .list-item {
@@ -97,6 +104,15 @@
 
     .list-item p {
         font-size: 1rem;
+    }
+
+    .exitbutton {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1.25rem;
     }
     
 </style>
