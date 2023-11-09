@@ -5,6 +5,7 @@
 	import { enhance } from '$app/forms';
 	import { invalidateAll } from '$app/navigation'
 	import Button from '../lib/components/Button.svelte';
+
 	export let data;
 	$: sightings = data.sightings.map((s) => ({
 		...s,
@@ -139,7 +140,7 @@ function updateSelectClass(value) {
 					}
 				}}>
 					<label for="username">Username</label>
-					<input name="username" id="username" type="text" required />
+					<input name="username" id="username" type="text" value="Monkey D Lufy" required disabled/>
 				
 					<label for="title">Title</label>
 					<input name="title" id="title" type="text" required />
@@ -197,7 +198,7 @@ function updateSelectClass(value) {
 		background-color: lightgray;
 		padding: 0.5rem;
 		border-radius: 1rem;
-		box-shadow: 0px 0px 8px black;
+		box-shadow: 0px 0px 6px black;
 	}
 	button:hover{
 		cursor: pointer;
@@ -260,8 +261,14 @@ function updateSelectClass(value) {
 		background-color: lightgray;
 		border-radius: 0.5rem;
 		padding: 0.5rem;
+		margin-top: 0.5rem;
 	}
-	
+
+	form input, form textarea, form select{
+		border-radius: 0.3rem;
+		padding: 0.5rem;
+		border: 1px solid black;
+	}
 	form select option[value="danger"]{
 		color: red;
 	}

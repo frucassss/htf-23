@@ -17,7 +17,7 @@ export const actions = {
 			'/sightings[]',
 			{
 				id: randomUUID(),
-				username: formData.get('username'),
+				username: "Monkey D Lufy",
 				location: {
 					latitude: 51.1901512,
 					longitude: 4.4249487
