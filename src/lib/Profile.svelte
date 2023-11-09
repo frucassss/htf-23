@@ -19,6 +19,7 @@
     let title = '';
 
     onMount(async () => {
+        console.log(sightings)
         getSightings();
         filteredSightings = sightings;
         console.table(sightings);

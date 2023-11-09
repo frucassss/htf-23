@@ -13,6 +13,17 @@
 	</button>
 
 <style>
+	button{
+		background-color: transparent;
+		padding: 0.5rem;
+		border-radius: 1rem;
+		border: solid 1px black;
+		box-shadow: 0px 0px 6px black;
+	}
+	button:hover{
+		cursor: pointer;
+		background-color: lightgray;
+	}
 	.primary{
 		color:green;
 	}
