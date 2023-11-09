@@ -1,6 +1,7 @@
 <script>
     import {onMount} from 'svelte';
     import { goto } from '$app/navigation';
+    import Sighting from '/src/lib/components/Sighting.svelte';
     let user = {
         name: 'bard',
         email: 'bard@kiekebo.com',
@@ -63,10 +64,7 @@
     </div>
     {#each filteredSightings as sighting}
         <div class="list-item">
-            <span>{sighting.timestamp} by {sighting.username}</span>
-            <h2>{sighting.title}</h2>
-            <h3>{sighting.location.latitude} {sighting.location.longitude}</h3>
-            <p>{sighting.description}</p>
+            <Sighting sighting = {sighting}/>
         </div>
     {/each}
 </div>
