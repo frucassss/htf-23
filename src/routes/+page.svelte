@@ -2,6 +2,7 @@
 	const formatter = Intl.DateTimeFormat('nl-BE', { dateStyle: 'medium', timeStyle: 'short' });
 	import Map from '$lib/Map/Map.svelte';
 	import AddSightingPopup from '../lib/AddSightingPopup.svelte';
+	import Button from '../lib/components/Button.svelte';
 	export let data;
 	$: sightings = data.sightings.map((s) => ({
 		...s,
@@ -22,7 +23,7 @@
 	</div>
 	<div class="list-container">
 		<h1>Sightings</h1>
-		<button on:click={togglePopup}>Add Sighting</button> <!-- Button to add sighting -->
+		<Button on:click={togglePopup}>Add Sighting</Button> <!-- Button to add sighting -->
 		{#each sightings as sighting}
 			<div class="list-item">
 				<span>{sighting.timestamp} by {sighting.username}</span>
